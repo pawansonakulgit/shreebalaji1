@@ -190,7 +190,7 @@ const Home = () => {
                 <img
                   src={technicianImage2}
                   alt="TV Repair Expert at Work"
-                  className="rounded-lg shadow-lg"
+                  className="rounded-lg"
                 />
               </div>
             )}
