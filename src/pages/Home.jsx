@@ -64,7 +64,7 @@ const Home = () => {
 
             {isAbove1000px && (
               <div className="order-1 lg:order-2 flex justify-center">
-                <img src="../src/assets/homepng.png" alt="TV repair technician" className="rounded-lg" />
+                <img src={technicianImage} alt="TV repair technician" className="rounded-lg" />
               </div>
             )}
           </div>
