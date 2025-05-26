@@ -74,7 +74,7 @@ const About = () => {
                 <img
                   src={mainpng}
                   alt="Our repair shop"
-                  className="rounded-lg shadow-xl w-full"
+                  className="rounded-lg w-full"
                 />
               </div>
             )}
