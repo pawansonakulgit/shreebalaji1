@@ -9,7 +9,7 @@ import SectionHeader from '../components/ui/SectionHeader';
 import FeatureCard from '../components/ui/FeatureCard';
 import ServiceCard from '../components/ui/ServiceCard';
 import { Helmet } from 'react-helmet';
-import technicianImage from '../assets/2.png';
+import technicianImage from '../assets/homepng.png';
 
 const Home = () => {
   const [isAbove1000px, setIsAbove1000px] = useState(window.innerWidth > 1000);
