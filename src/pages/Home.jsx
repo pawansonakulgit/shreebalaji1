@@ -187,7 +187,7 @@ const Home = () => {
             {isAbove1000px && (
               <div>
                 <img
-                  src="https://images.pexels.com/photos/3938465/pexels-photo-3938465.jpeg"
+                  src="https://sdmntprcentralus.oaiusercontent.com/files/00000000-ed34-61f5-a858-bd660e0ce27a/raw?se=2025-05-26T12%3A16%3A04Z&sp=r&sv=2024-08-04&sr=b&scid=3a3edbad-2f78-57c2-8e50-b8f079cba41d&skoid=732f244e-db13-47c3-bcc7-7ee02a9397bc&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-25T23%3A16%3A41Z&ske=2025-05-26T23%3A16%3A41Z&sks=b&skv=2024-08-04&sig=gNC9T/fEAmUr4SEdrtQmt4w%2B9XX1hcgYXTaAF/owh7I%3D"
                   alt="TV Repair Expert at Work"
                   className="rounded-lg shadow-lg"
                 />
