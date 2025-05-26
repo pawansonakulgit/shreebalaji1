@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import FeatureCard from '../components/ui/FeatureCard'
 import { Helmet } from 'react-helmet'
 import sachinImage from '../assets/sachinpic.png';
+import mainpng from '../assets/aboutpng.png';
 
 const About = () => {
 
@@ -71,7 +72,7 @@ const About = () => {
             {isAbove1000px && (
               <div>
                 <img
-                  src="https://images.pexels.com/photos/4792733/pexels-photo-4792733.jpeg"
+                  src={mainpng}
                   alt="Our repair shop"
                   className="rounded-lg shadow-xl w-full"
                 />
