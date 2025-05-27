@@ -188,7 +188,7 @@ const Home = () => {
             {isAbove1000px && (
               <div>
                 <img
-                  src="../src/assests/home2.png"
+                  src="blob:https://imageconvertorutility.netlify.app/f036088c-56d7-4413-833e-01bcd35b700a"
                   alt="TV Repair Expert at Work"
                   className="rounded-lg"
                 />
