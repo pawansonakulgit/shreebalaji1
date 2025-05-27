@@ -1,5 +1,4 @@
 // Home.jsx
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp, FaTools, FaShieldAlt } from 'react-icons/fa';
@@ -188,7 +187,7 @@ const Home = () => {
             {isAbove1000px && (
               <div>
                 <img
-                  src="blob:https://imageconvertorutility.netlify.app/f036088c-56d7-4413-833e-01bcd35b700a"
+                  src={technicianImage2}
                   alt="TV Repair Expert at Work"
                   className="rounded-lg"
                 />
