@@ -166,52 +166,63 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us - Text */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-start">
-            <div>
-              <span className="inline-block px-3 py-1 mb-3 text-sm font-medium text-primary-700 bg-primary-100 rounded-full">
-                Our Commitment
-              </span>
-              <h2 className="text-3xl font-bold mb-6 text-slate-800">Why Customers Trust Us</h2>
-              <p className="text-slate-600 mb-6">
-                For over 25+ years, Shree Balaji Electronics has been Pune's go-to TV repair service.
-                Our commitment to quality repairs, transparent pricing, and excellent customer service
-                has earned us the trust of thousands of satisfied customers.
-              </p>
-
-              <div className="space-y-4">
-                {[
-                  { title: 'Experienced Technicians', desc: 'Our team has decades of combined experience repairing all TV brands.' },
-                  { title: 'Genuine Parts', desc: 'We use only authentic replacement parts to ensure long-lasting repairs.' },
-                  { title: 'Home Service Available', desc: "Can't bring your TV to us? Our technicians can come to your home." },
-                  { title: '90-Day Warranty', desc: 'All our repairs are backed by our service warranty for your peace of mind.' },
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className="flex-shrink-0 p-1 bg-primary-100 rounded-full text-primary-600 mt-1">
-                      <HiOutlineCheck size={18} />
-                    </div>
-                    <div className="ml-3">
-                      <h3 className="font-semibold text-slate-800">{item.title}</h3>
-                      <p className="text-slate-600">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
+      {/* Why Customers Trust Us Section */}
+      <section className="py-20 bg-white text-center">
+        <div className="container max-w-4xl mx-auto">
+          <span className="inline-block px-4 py-1 mb-4 text-sm font-medium text-primary-700 bg-primary-100 rounded-full">
+            Our Commitment
+          </span>
+          <h2 className="text-3xl font-bold mb-6 text-slate-800">
+            Why Customers Trust Us
+          </h2>
+          <p className="text-slate-600 text-lg mb-10">
+            For over 25+ years, Shree Balaji Electronics has been Pune's go-to TV repair service.
+            Our commitment to quality repairs, transparent pricing, and excellent customer service
+            has earned us the trust of thousands of satisfied customers.
+          </p>
+      
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-left">
+            {[
+              {
+                title: 'Experienced Technicians',
+                desc: 'Our team has decades of combined experience repairing all TV brands.',
+              },
+              {
+                title: 'Genuine Parts',
+                desc: 'We use only authentic replacement parts to ensure long-lasting repairs.',
+              },
+              {
+                title: 'Home Service Available',
+                desc: "Can't bring your TV to us? Our technicians can come to your home.",
+              },
+              {
+                title: '90-Day Warranty',
+                desc: 'All our repairs are backed by our service warranty for your peace of mind.',
+              },
+            ].map((item, index) => (
+              <div key={index} className="flex items-start">
+                <div className="flex-shrink-0 p-2 bg-primary-100 rounded-full text-primary-600 mt-1">
+                  <HiOutlineCheck size={18} />
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-lg font-semibold text-slate-800">{item.title}</h3>
+                  <p className="text-slate-600">{item.desc}</p>
+                </div>
               </div>
-
-              <div className="mt-8">
-                <Link
-                  to="/about"
-                  className="inline-flex items-center px-6 py-3 font-medium text-white rounded-md bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
-                >
-                  Learn More About Us
-                </Link>
-              </div>
-            </div>
+            ))}
+          </div>
+      
+          <div className="mt-12">
+            <Link
+              to="/about"
+              className="inline-flex items-center px-6 py-3 font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-md transition-colors duration-300"
+            >
+              Learn More About Us
+            </Link>
           </div>
         </div>
       </section>
+
     </>
   );
 };
