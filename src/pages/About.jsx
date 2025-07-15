@@ -5,7 +5,6 @@ import React, { useEffect, useState } from 'react';
 import FeatureCard from '../components/ui/FeatureCard'
 import { Helmet } from 'react-helmet'
 import sachinImage from '../assets/sachinpic.png';
-import mainpng from '../assets/aboutpng.png';
 
 const About = () => {
 
@@ -40,47 +39,28 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-block px-3 py-1 mb-3 text-sm font-medium text-primary-700 bg-primary-100 rounded-full">
-                Our Story
-              </span>
-              <h2 className="text-3xl font-bold mb-6 text-slate-800">
-                A Journey of Excellence in TV Repair
-              </h2>
-              <div className="space-y-4 text-slate-700">
-                <p>
-                  Established in 2001, Shree Balaji Electronics began as a small TV repair shop in Pune.
-                  Founded by Mr. Sachin Sonakul, who had over a decade of experience working with leading
-                  electronics manufacturers, the business quickly gained popularity for its honest service
-                  and technical expertise.
-                </p>
-                <p>
-                  As technology evolved from CRT to LCD, LED, and Smart TVs, our team continuously upgraded
-                  their skills and equipment to stay ahead. Today, we're proud to be Pune's most trusted
-                  TV repair service, handling over 2,000 repairs annually with a 98% customer satisfaction rate.
-                </p>
-                <p>
-                  Our philosophy is simple: provide honest service at fair prices, use quality parts,
-                  and treat every customer's TV as if it were our own. This approach has earned us
-                  thousands of loyal customers across Pune.
-                </p>
-              </div>
-            </div>
-            {isAbove1000px && (
-              <div>
-                <img
-                  src={mainpng}
-                  alt="Our repair shop"
-                  className="rounded-lg w-full"
-                />
-              </div>
-            )}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto max-w-5xl text-center">
+          <span className="inline-block px-4 py-1 mb-4 text-sm font-semibold text-primary-700 bg-primary-100 rounded-full">
+            Our Story
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-800 leading-tight">
+            A Journey of Excellence in TV Repair
+          </h2>
+          <div className="space-y-5 text-base md:text-lg text-slate-600 leading-relaxed">
+            <p>
+              Founded in 2001 by Mr. Sachin Sonakul, Shree Balaji Electronics started as a humble TV repair shop in Pune. Backed by a decade of experience in electronics, his commitment to honest service and unmatched technical skill quickly built trust in the community.
+            </p>
+            <p>
+              From bulky CRTs to sleek Smart TVs, we’ve evolved with technology—upgrading our skills, tools, and training every step of the way. Today, we proudly serve over 2,000 households annually with a 98% satisfaction rate.
+            </p>
+            <p>
+              Our philosophy is simple: deliver honest service, use only quality parts, and treat every customer’s TV like our own. This mindset has earned us thousands of loyal customers across Pune and counting.
+            </p>
           </div>
         </div>
       </section>
+
 
       {/* Timeline */}
       <section className="py-20 bg-slate-50">

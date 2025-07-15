@@ -18,19 +18,19 @@ body {
   .btn-primary {
     @apply px-6 py-2 font-medium text-white transition-all duration-300 rounded-md bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
   }
-  
+
   .btn-secondary {
     @apply px-6 py-2 font-medium transition-all duration-300 rounded-md bg-white text-primary-600 border border-primary-600 hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
   }
-  
+
   .btn-accent {
     @apply px-6 py-2 font-medium text-white transition-all duration-300 rounded-md bg-accent-500 hover:bg-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
   }
-  
+
   .section-title {
     @apply mb-2 text-3xl font-bold text-slate-800 sm:text-4xl;
   }
-  
+
   .section-subtitle {
     @apply mb-8 text-lg text-slate-600;
   }
@@ -49,4 +49,8 @@ body {
 [data-aos].aos-animate {
   opacity: 1;
   transform: translateY(0);
+}
+
+html {
+  scroll-behavior: smooth;
 }

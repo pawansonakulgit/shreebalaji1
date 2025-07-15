@@ -1,4 +1,3 @@
-// Home.jsx
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaWhatsapp, FaTools, FaShieldAlt } from 'react-icons/fa';
@@ -8,8 +7,7 @@ import SectionHeader from '../components/ui/SectionHeader';
 import FeatureCard from '../components/ui/FeatureCard';
 import ServiceCard from '../components/ui/ServiceCard';
 import { Helmet } from 'react-helmet';
-import technicianImage from '../assets/2.png';
-import technicianImage2 from '../assets/home2.png';
+import technicianImage from '../assets/technicianImage.png'; // ✅ Replace with correct path
 
 const Home = () => {
   const [isAbove1000px, setIsAbove1000px] = useState(window.innerWidth > 1000);
@@ -64,7 +62,11 @@ const Home = () => {
 
             {isAbove1000px && (
               <div className="order-1 lg:order-2 flex justify-center">
-                <img src={technicianImage} alt="TV repair technician" className="rounded-lg" />
+                <img
+                  src={technicianImage}
+                  alt="TV repair technician"
+                  className="w-full max-w-xs md:max-w-sm lg:max-w-md h-auto object-contain drop-shadow-lg"
+                />
               </div>
             )}
           </div>
@@ -85,31 +87,15 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FeatureCard
-              icon={FaTools}
-              title="Expert Technicians"
-              description="Our technicians are factory-trained with years of experience repairing all TV brands."
-            />
-            <FeatureCard
-              icon={HiClock}
-              title="Quick Service"
-              description="Most repairs are completed within 24-48 hours to minimize your downtime."
-            />
-            <FeatureCard
-              icon={HiCurrencyRupee}
-              title="Affordable Rates"
-              description="Transparent pricing with no hidden fees. We provide estimates before starting work."
-            />
-            <FeatureCard
-              icon={FaShieldAlt}
-              title="Service Warranty"
-              description="All our repairs come with a 90-day warranty for your peace of mind."
-            />
+            <FeatureCard icon={FaTools} title="Expert Technicians" description="Our technicians are factory-trained with years of experience repairing all TV brands." />
+            <FeatureCard icon={HiClock} title="Quick Service" description="Most repairs are completed within 24-48 hours to minimize your downtime." />
+            <FeatureCard icon={HiCurrencyRupee} title="Affordable Rates" description="Transparent pricing with no hidden fees. We provide estimates before starting work." />
+            <FeatureCard icon={FaShieldAlt} title="Service Warranty" description="All our repairs come with a 90-day warranty for your peace of mind." />
           </div>
         </div>
       </section>
 
-      {/* Service Highlights */}
+      {/* Services Section */}
       <section className="py-20 bg-slate-50">
         <div className="container">
           <div className="text-center mb-16">
@@ -148,7 +134,7 @@ const Home = () => {
               to="/services"
               className="inline-flex items-center px-6 py-3 font-medium text-white rounded-md bg-primary-600 hover:bg-primary-700 transition-colors duration-300"
             >
-              <span>View All Services</span>
+              View All Services
             </Link>
           </div>
         </div>
@@ -180,19 +166,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Details */}
+      {/* Why Choose Us - Text */}
       <section className="py-20 bg-white">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {isAbove1000px && (
-              <div>
-                <img
-                  src={technicianImage2}
-                  alt="TV Repair Expert at Work"
-                  className="rounded-lg"
-                />
-              </div>
-            )}
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-start">
             <div>
               <span className="inline-block px-3 py-1 mb-3 text-sm font-medium text-primary-700 bg-primary-100 rounded-full">
                 Our Commitment

@@ -15,11 +15,11 @@ const Footer = () => {
               Providing professional TV repair services in Pune since 2005. We specialize in all types of TV repairs including LED, LCD, and Smart TVs.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/sachin.sonakul" target="_blank" rel="noopener noreferrer"
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
                 className="text-slate-300 hover:text-primary-400 transition-colors duration-200">
                 <FaFacebook size={22} />
               </a>
-              <a href="https://www.instagram.com/sachinsonakul/" target="_blank" rel="noopener noreferrer"
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
                 className="text-slate-300 hover:text-primary-400 transition-colors duration-200">
                 <FaInstagram size={22} />
               </a>

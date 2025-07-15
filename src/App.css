@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+/* NProgress bar */
+#nprogress .bar {
+  background: #2563eb;
+  height: 2px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #2563eb, 0 0 5px #2563eb;
+}
